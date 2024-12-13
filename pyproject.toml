@@ -11,7 +11,7 @@ script = "build.py"
 generate-setup-file = true
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.11"
 opencv-python = "^4.10.0.84"
 
 

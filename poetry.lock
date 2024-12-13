@@ -81,9 +81,12 @@ files = [
 ]
 
 [package.dependencies]
-numpy = {version = ">=1.26.0", markers = "python_version >= \"3.12\""}
+numpy = [
+    {version = ">=1.26.0", markers = "python_version >= \"3.12\""},
+    {version = ">=1.23.5", markers = "python_version >= \"3.11\" and python_version < \"3.12\""},
+]
 
 [metadata]
 lock-version = "2.0"
-python-versions = "^3.12"
-content-hash = "353f356ddb42fc2e9d3f5205fd00f5e35725a86afbec9434f7249ceb286222d2"
+python-versions = "^3.11"
+content-hash = "b5a137dca3a844b3d607a86c539b4e980a91b782d94f9cb1be51019c326a9f30"
