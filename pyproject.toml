@@ -1,2 +1,20 @@
+[tool.poetry]
+name = "pysimplendi"
+version = "0.1.4"
+description = "simple python NDI sender/receiver"
+authors = ["Kosaku Namikawa <cigarbox.nami@gmail.com>", "Alexander Kraus <nr4@z10.info>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.build]
+script = "build.py"
+generate-setup-file = true
+
+[tool.poetry.dependencies]
+python = "^3.12"
+opencv-python = "^4.10.0.84"
+
+
 [build-system]
-requires = ["setuptools", "wheel", "cmake>=3.1.0", "pybind11"]
+requires = ["poetry-core", "setuptools>=75.6.0", "wheel>=0.45.1", "cmake>=3.31.1", "pybind11>=2.13.6"]
+build-backend = "poetry.core.masonry.api"
